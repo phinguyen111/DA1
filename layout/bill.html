@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+body, html {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 400;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.paddAllPage {
+    padding: 30px 0 50px;
+}
+
+.wrapperS {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.box_mid {
+    width: 100%;
+}
+.box_mid .mid-title {
+    margin-bottom: 10px;
+}
+.box_mid .mid-title {
+    width: auto;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+.box_mid .mid-title .titleL {
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+}
+.box_mid .mid-title .titleL h1, .box_mid .mid-title .titleL h2 {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+.box_mid .mid-title .titleR {
+    float: none;
+}
+
+.box_mid .mid-title .titleR {
+    float: right;
+    position: relative;
+}
+.clear {
+    clear: both;
+    font-size: 0;
+}
+.clear {
+    clear: both;
+    font-size: 0px;
+    line-height: 0px;
+    height: 0;
+}
+script {
+    display: none;
+}
+.boxManagerTitle {
+    padding: 15px 20px;
+    text-align: center;
+    background: #f5f5f5;
+    margin-bottom: 25px;
+}
+.boxManagerTitle .code {
+    font-size: 25px;
+    line-height: 35px;
+}
+.boxManagerTitle .code span {
+    color: #d01f6f;
+}
+.boxManagerTitle .code {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.boxManagerTitle {
+    padding: 15px 20px;
+    text-align: center;
+    background: #f5f5f5;
+    margin-bottom: 25px;
+}
+.boxManagerTitle .txt {
+    font-size: 15px;
+    line-height: 23px;
+}
+.orderManager {
+    margin-bottom: 15px;
+}
+.orderManager .statusBar {
+    background: #f1f1f1;
+    padding: 30px 25px;
+    margin-bottom: 15px;
+}
+.orderManager .statusBar ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+ol, ul {
+    list-style: none;
+}
+.orderManager .statusBar ul:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #ffffff;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.orderManager .statusBar ul li {
+    padding-top: 20px;
+    width: 20%;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    letter-spacing: -0.7px;
+    position: relative;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.orderManager .statusBar ul li.active:before {
+    display: block;
+    background: #d01f6f;
+}
+.orderManager .statusBar ul li:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #ffffff;
+    border: solid 5px #d01f6f;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: none;
+}
+.statusTable table {
+    width: 100%;
+    border-top: solid 1px rgba(0,0,0,0.1);
+    border-left: solid 1px rgba(0,0,0,0.1);
+}
+table {
+    background-color: transparent;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.statusTable table tr th {
+    width: 180px;
+}
+.statusTable table tr td, .statusTable table tr th {
+    padding: 10px 10px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    border-right: solid 1px rgba(0,0,0,0.1);
+}
+td, th {
+    line-height: 18px;
+}
+th {
+    text-align: left;
+}
+td, th {
+    padding: 0;
+}
+.infoAcoount {
+    margin-bottom: 30px;
+}
+.infoAcoount .lstInfoSDP {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    margin-bottom: 5px;
+}
+.infoAcoount .lstInfoSDP .itemCol {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.infoAcoount .lstInfoSDP .itemColInfo {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.infoAcoount .lstInfoSDP .itemCol .title {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 10px 15px;
+    background-color: #f6f6f6;
+}
+.infoAcoount .lstInfoSDP .itemCol .content {
+    padding: 10px 15px;
+    height: calc(100% - 34px);
+    font-size: 15px;
+}
+
+.infoAcoount .lstInfoSDP .itemCol .content .name {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: bold;
+}
+p {
+    margin: 0px;
+    padding: 5px 0px;
+}
+.boxAllPMBd {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.boxAllPMBd .boxAllTil {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 10px 15px;
+    background-color: #f6f6f6;
+    margin-bottom: 0;
+}
+.boxAllPMBd .boxAllConte {
+    padding: 20px;
+}
+.boxAllPMBd .addtocart1 {
+    width: 100%;
+}
+.boxAllPMBd .lstProtable:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.boxAllPMBd .lstProtable {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.boxAllPMBd .lstProtable .productLeft {
+    display: flex;
+}
+.boxAllPMBd .lstProtable .productLeft .img {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    background-color: #f6f6f6;
+}
+.boxAllPMBd .lstProtable .productLeft .img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+img {
+    border: 0px;
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+a, a:hover, a:visited, a:focus {
+    text-decoration: none;
+}
+a, button {
+    color: #333333;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+a {
+    text-decoration: none;
+    color: #882106;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+.boxAllPMBd .lstProtable .productLeft .ifo {
+    width: calc(100% - 105px);
+    padding-left: 20px;
+}
+.boxAllPMBd .lstProtable .productLeft .i-title {
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.boxAllPMBd .lstProtable .productLeft .i-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxAllPMBd .lstProtable .productLeft .i-options .i-color {
+    margin-right: 10px;
+}
+.boxAllPMBd .lstProtable .priceRight .i-price-sale {
+    font-size: 16px;
+    line-height: 24px;
+    color: #d01f6f;
+}
+.boxPayment {
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxPayment > div {
+    width: 50%;
+    padding: 0 10px;
+}
+.boxPayment .boxPaymentR .total_cart {
+    margin-bottom: 20px;
+}
+.boxPayment .total_cart .item_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.boxPayment .total_cart .row_info .gg, .boxPayment .total_cart .row_info .tt {
+    font-weight: 400;
+}
+.boxPayment .total_cart .row_total .item_1 {
+    margin-bottom: 0;
+}
+.boxPayment .total_cart .row_total .total_price {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.boxbtnPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.boxbtnPage button {
+    background-color: #333333;
+    color: #fff;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.boxbtnPage a, .boxbtnPage button {
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    border: 1px solid #333333;
+    padding: 10px 30px;
+    display: inline-block;
+}
+a, button {
+    color: #333333;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+    </style>
+</head>
+<body>
+    <div id="vnt-content">
+        <div class="paddAllPage">
+        <div class="wrapperS">
+            <div class="box_mid">
+                <div class="mid-title">
+                    <div class="titleL">
+                        <h1>Theo dõi đơn hàng</h1>
+                    </div>
+                    <div class="titleR"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="mid-content">
+    <div class="block-tracking-order">
+    <div class="boxManagerTitle">
+        <div class="code"> #18590-20231130  - <span>Đang chờ xử lý</span></div>
+        <div class="txt">Ngày đặt hàng: 21:17, 30/11/2023</div>
+    </div>
+    
+    <div class="orderManager"  >
+        <div class="statusBar">
+            <ul>
+                <li class="active active-last" >Đang chờ xử lý</li><li  >Đang Soạn Hàng</li><li  >Đã hoàn tất</li><li  >Hủy Đơn Hàng</li>
+            </ul>
+        </div>
+        <div class="statusTable">
+            <table>
+                
+                <tr>
+                    <th>21:17, 30/11/2023</th>
+                    <td>Đang chờ xử lý</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+    <div class="infoAcoount" id="info-order">
+    
+        <div class="lstInfoSDP">
+            <div class="itemCol">
+                <div class="itemColInfo">
+                    <div class="title">THÔNG TIN NGƯỜI NHẬN </div>
+                    <div class="content">
+                        <div class="name">âc</div><p>ấc</p><p>ấcc, Tân Hưng, Long An</p>
+                    </div>
+                </div>
+            </div>
+            <div class="itemCol">
+                <div class="itemColInfo">
+                    <div class="title">VẬN CHUYỂN VÀ THANH TOÁN</div>
+                    <div class="content">
+                        <div class="info-shipping"><p><b>Giao Hàng Tận Nơi </b></p><p>Phí vận chuyển: 30.000  đ</p></div>
+                        <div class="info-payment" style="margin-top: 10px;"><p><b>Thanh toán khi nhận hàng (COD)</b></p><p><p>Cảm ơn quý khách đã mua sắm tại Oldsailor.com.vn</p>
+    
+    <p>**Lưu ý: Mã giảm giá không áp dụng cho các sản phẩm đang khuyến mãi</p>
+    
+    <p>Để ship nhanh trong ngày, vui lòng gọi (028) 36 222 000 để được hướng dẫn</p>
+    <p>&nbsp;</p>
+    </p></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="itemCol" style="display:none">
+                <div class="itemColInfo">
+                    <div class="title">Xuất hóa đơn công ty</div>
+                    <div class="content">
+                        <p><strong>Tên công ty:</strong> </p>
+                        <p><strong>Địa chỉ công ty:</strong> </p>
+                        <p><strong>Mã số thuế:</strong> </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="itemCol" style="display:none">
+                <div class="itemColInfo">
+                    <div class="title">Gửi quà tặng đến bạn bè, người thân</div>
+                    <div class="content">
+                        <p>Gửi từ : <strong>:</strong> - Đến :  <b></b></p>
+                        <p>Lời nhắn:  </p>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+        <div class="boxAllPM boxAllPMBd">
+            <div class="boxAllTil">
+                <div class="title">THÔNG TIN GIỎ HÀNG</div>
+            </div>
+            <div class="boxAllConte">
+                <div class="addtocart1">
+                    
+                    <div class="lstProtable">
+                        <div class="productLeft">
+                            <div class="img">
+                                <a href="/dep-quai-ngang-old-sailor-dede36001-big-size-upto-44.html" target="_blank">
+                                    <img src="https://oldsailor.com.vn/vnt_upload/product/11_2023/6d3256a5-ce21-4360-b07c-dd71c8b79cb1.jpg" alt="" >
+                                </a>
+                            </div>
+                            <div class="ifo">
+                                <div class="i-title">Dép quai ngang Old Sailor - DEDE36001 - Big size upto 44</div>
+                                <div class="i-options">
+                                    <div class="i-color"> <span>Màu:</span> </div>
+                                    <div class="i-size"> <span>Size: </span> 43</div>
+                                    <div class="i-quality"> <span>Số lượng: </span> 1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="priceRight">
+                            <div class="i-price-sale">295.000  đ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxPayment">
+                    <div class="boxPaymentL">
+                    </div>
+                    <div class="boxPaymentR">
+    
+                        <div class="total_cart">
+                            <div class="content_1">
+    
+                                <div class="row_info">
+                                    <div class="item_1">
+                                        <div class="row_left">Tổng giỏ hàng: </div>
+                                        <div class="total_price tt"><span id="ext_cart_total">295,000  đ</span></div>
+                                    </div>
+                                    <div class="item_1">
+                                        <div class="row_left">Phí vận chuyển :</div>
+                                        <div class="total_price gg"><span id="ext_s_price">30,000  đ</span></div>
+                                    </div>
+                                </div>
+                                <div class="row_total">
+                                    <div class="item_1">
+                                        <div class="row_left">Tổng cộng:</div>
+                                        <div class="total_price tt"><span  id="ext_total_price">325,000  đ</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boxbtnPage">
+            <div class="btnCal"><button type="button">
+                <span>Hủy đơn hàng</span>
+            </button></div>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
