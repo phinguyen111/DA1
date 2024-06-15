@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    
+    <header>
+            <div class="logo"><img src="https://canifa.com/assets/images/logo.svg" alt=""></div>
+             <!-- Menu icons -->
+            <i class='bx bx-menu' id="menu-icon"></i>    
+            <ul class="nav-bar">
+                <li><a href="">TRANG CHỦ </a></li>
+                <li><a href="">SẢN PHẨM</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+                <li><a href="">GIỚI THIỆU</a></li>
+            </ul>
+            <div class="cart-item">
+                <i class='bx bx-search-alt' id="search-icon" ></i>
+                <i class='bx bx-cart-alt' id="cart-icon" ></i>
+                <span class="number-cart">10</span>     
+            </div>
+            <div class="header-icon " onclick="toggleLoginForm()"  >
+                <i class='bx bxs-user-circle' id="user-form" ></i>
+                  <!-- OPEN LOGIN FORM -->
+                <div class="login-form" id="loginForm">
+                  <ul id="ul-from">
+                    <li><a href=""><i class='bx bx-user-circle'></i><span>Thông tin tài khoản</span></a></li>
+                    <li><a href=""><i class='bx bx-spreadsheet'></i><span>Đơn hàng của tôi</span></a></li>
+                    <li><a href=""><i class='bx bx-lock-open'></i><span>Thay đổi mật khẩu</span></a></li>
+                    <li><a href=""><i class='bx bx-exit' ></i><span>Thoát</span></a></li>
+                  </ul> 
+                </div>
+                
+            </div>
+            <!-- OPEN FORM SEARCH -->
+            <div class="search-form">
+                <input type="search" placeholder="Tìm kiếm...">
+            </div>
+
+          
+    </header>
+     <!-- Swiper -->
+    <section class="slideshow">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img//fixed/slide1.jpeg" alt="" width="1415px" height="auto">
+              </div>
+              <div class="swiper-slide">
+                <img src="img//fixed/slide2.jpeg" alt="" width="1415px" height="auto">
+              </div>
+              <div class="swiper-slide">
+                <img src="img//fixed/slide3.jpeg" alt="" width="1415px" height="auto">
+              </div>
+              <div class="swiper-slide">
+                <img src="img//fixed/slide4.jpeg" alt="" width="1415px" height="auto">
+              </div>
+              <div class="swiper-slide">
+                <img src="img//fixed/slide5.webp" alt="" width="1415px" height="auto">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <section class="section-p1" id="product1">
+
+      <div class="pro-container">
+        <div class="pro">
+          <img class="new" src="img/product/iconbest.png" alt="">
+          <img class="img" src="img/product/k5.jpeg" alt="">
+          <div class="des">
+            <span>Áo khoác</span>
+            <h5>Áo khoác nam T-Shirts</h5>
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+            </div>
+            <span class="price">
+              <h4 class="sell">$400</h4>
+              <span>$300</span>
+            </span>
+          </div>
+          <button class="showForm"><i class='bx bx-cart-add cart'></i></button>
+        </div>
+        <div class="pro">
+          <img class="new" src="img/product/iconbest.png" alt="">
+          <img class="img" src="img/product/k5.jpeg" alt="">
+          <div class="des">
+            <span>Áo khoác</span>
+            <h5>Áo khoác nam T-Shirts</h5>
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+            </div>
+            <span class="price">
+              <h4 class="sell">$400</h4>
+              <span>$300</span>
+            </span>
+          </div>
+          <button class="showForm"><i class='bx bx-cart-add cart'></i></button>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const showFormButtons = document.querySelectorAll('.showForm');
+          const overlays = document.querySelectorAll('.overlay');
+          const closeButtons = document.querySelectorAll('.close');
+      
+          // Lặp qua từng nút showForm và thêm sự kiện click
+          showFormButtons.forEach(function(button, index) {
+            button.addEventListener('click', function() {
+              // Hiển thị overlay tương ứng với nút được nhấn
+              overlays[index].style.display = 'block';
+            });
+          });
+      
+          // Lặp qua từng nút close và thêm sự kiện click
+          closeButtons.forEach(function(closeBtn, index) {
+            closeBtn.addEventListener('click', function() {
+              // Ẩn overlay tương ứng với nút được nhấn
+              overlays[index].style.display = 'none';
+            });
+          });
+        });
+      </script>
+
+
+      <div class="overlay" id="overlay">
+  <div class="popup">
+    <span class="close">&times;</span>
+    <div id="product-details" class="product-details">
+    <div class="single-pro-image">
+        <img src="img/product/k1.jpeg" alt="" width="100%" id="MainImg">
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="img/product/k1.jpeg" width="100%" class="smallimg" alt="">
+             </div>
+            <div class="small-img-col">
+                <img src="img/product/k2.jpeg" width="100%" class="smallimg" alt="">
+             </div>
+             <div class="small-img-col">
+                <img src="img/product/k1.jpeg" width="100%" class="smallimg" alt="">
+             </div>
+             <div class="small-img-col">
+                <img src="img/product/k1.jpeg" width="100%" class="smallimg" alt="">
+             </div>
+       </div>  
+    </div>
+    <div class="single-pro-details">
+      <div class="pd-sticky">
+        <div class="box-hot1">
+          <span style="background-color:#F8E4D2 ; color: #F2994A;border-radius: 10px;">#Bán chạy</span>
+          <span style="background-color: #b1ddf2; color: hsl(199, 90%, 62%);border-radius: 10px;">Đã bán: 1.5k</span>
+        </div>
+        <div class="bd-bot pb-0 pb-sm-0 pb-md-3">
+            <h1 class="pd-title h3">ÁO THUN NAM - TOTODAY - YOUTHFUL</h1>
+            <div class="product-rate-sku">
+              <div class="rate">
+                  <i class='bx bxs-star' ></i>
+                  <span>5/5</span>
+              </div>
+              <div class="sku">
+                  Áo Nam
+              </div>
+              <div class="status">
+                  <span class="available">Còn Hàng</span>
+              </div>
+          </div>
+            <div class="pd-detail__price">
+              <h1 style="margin:0px">Giá: <span>$300</span></h1>
+            </div>
+            <div class="attr py-3">
+              <div class="colorPicker clearfix my-3 ">
+                <label class="control-label p ">Màu sắc : </label>
+                  <p class="color req row row-cols-auto gx-3 gy-2" data-column="i4">
+                    <span class="itemColor ">
+                      <a rel="nofollow" href="javascript:" class="" data-value="587993" title="CR" data-pids="37881240" selid="37881240" data-src="https://pos.nvncdn.net/d0f3ca-7136/ps/20231007_KSpUhQP6kg.jpeg" style="background-color: #FFFFF0">
+                        <img src="https://pos.nvncdn.net/d0f3ca-7136/ps/20231007_KSpUhQP6kg.jpeg" alt=""> 
+                      </a>
+                    </span>
+                    <span class="itemColor">
+                      <a rel="nofollow" href="javascript:" class="" data-value="276848" title="BU" data-pids="37881243" selid="37881243" data-src="https://pos.nvncdn.net/d0f3ca-7136/ps/20231007_HOcxx18YUi.jpeg" style="background-color: #4B98D5">
+                        <img src="https://pos.nvncdn.net/d0f3ca-7136/ps/20231007_HOcxx18YUi.jpeg" alt=""> 
+                      </a>
+                    </span>
+                    <span class="itemColor">
+                      <a rel="nofollow" href="javascript:" class="" data-value="276836" title="WH" data-pids="37881237" selid="37881237" data-src="https://pos.nvncdn.net/d0f3ca-7136/ps/20231007_ZT6cjFmQAu.jpeg" style="background-color: #FFFFFF">
+                        <img src="https://pos.nvncdn.net/d0f3ca-7136/ps/20231007_ZT6cjFmQAu.jpeg" alt=""> 
+                      </a>
+                    </span>                                    
+                  </p>
+              </div>
+                  <div class="sizePicker clearfix my-3">
+                    <label class="control-label">Kích cỡ</label>
+                      <p class="size req d-flex flex-wrap" data-column="i5">
+                        <span>
+                          <a data-value="276820" href="javascript:void(0)" class="">L</a>
+                        </span>
+                        <span>
+                          <a data-value="276821" href="javascript:void(0)" class="">XL</a>
+                        </span>
+                        <span>
+                          <a data-value="276822" href="javascript:void(0)" class="">2XL</a>
+                        </span>                                    
+                      </p>
+                  </div>
+                                            
+                </div>
+            <div class="pview-action">
+              <div class="sizePicker clearfix ">
+                <label class="control-label">Số lượng</label>
+                <p class="size req d-flex flex-wrap" data-column="i5">
+                  <span>
+                    <input type="number" name="soluong" value="1" min="1">
+                  </span>
+                </p>
+              </div>
+                <div class="pview-btn mt-3 d-flex flex-wrap py-3">
+                  <button class="addcart" id="buyNow">Mua ngay</button>
+                  <button class="addcart" id="addToCart">Them vao gio hang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+  </div>
+      </div>
+
+
+
+        
+    </section>
+
+     <section class="footer">
+        <footer>
+          <div class="col">
+            <img src="" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 18/4 Mỹ Huề , Trung Chánh Hóc Môn</p>
+            <p><strong>Phone:</strong> (+84) 3770 812 / (+01) 1231 1231</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00. MON - SAT</p>
+  
+            <div class="follow">
+              <h4>Follow Us</h4>
+              <div class="icon">
+                <i class='bx bxl-facebook fb' ></i>
+                <i class='bx bxl-twitter twitter'></i>
+                <i class='bx bxl-instagram-alt instagram'></i>
+                <i class='bx bxl-youtube ytb' ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h4>About</h4>
+            <a href="">About us</a>
+            <a href="">Phỏng vấn</a>
+            <a href="">Hoạt động của công ty</a>
+            <a href="">Sự kiện </a>
+          </div>
+          <div class="col">
+            <h4>My account</h4>
+            <a href="">About us</a>
+            <a href="">Phỏng vấn</a>
+            <a href="">Hoạt động của công ty</a>
+            <a href="">Sự kiện </a>
+          </div>
+          <div class="col">
+            <h4>Intall app</h4>
+            <p>Form app Store or Google Play</p>
+            <div class="row">
+              <img src="img/fixed/app.jpg" alt="">
+              <img src="img/fixed/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Geatways</p>
+            <img class="pay" src="img/fixed/pay.png" alt="">
+          </div>
+        </footer>
+        
+     </section>
+
+    
+    
+      
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+  var MainImg = document.getElementById('MainImg');
+  var smallimg=document.getElementsByClassName('smallimg');
+
+  smallimg[0].onclick= function(){
+      MainImg.src=smallimg[0].src;
+  }
+  smallimg[1].onclick= function(){
+      MainImg.src=smallimg[1].src;
+      
+  }
+  smallimg[2].onclick= function(){
+      MainImg.src=smallimg[2].src;
+      
+  }
+  smallimg[3].onclick= function(){
+      MainImg.src=smallimg[3].src;
+      
+  }
+  </script>
+
+<script src="js/script.js"></script>
+
+<!-- Initialize Swiper -->
+<script src="./js/slide.js"></script>
+</body>
+</html>
+ 

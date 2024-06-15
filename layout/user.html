@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+            <div class="logo"><img src="https://canifa.com/assets/images/logo.svg" alt=""></div>
+             <!-- Menu icons -->
+            <i class='bx bx-menu' id="menu-icon"></i>    
+            <ul class="nav-bar">
+                <li><a href="">TRANG CHỦ </a></li>
+                <li><a href="">SẢN PHẨM</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+                <li><a href="">GIỚI THIỆU</a></li>
+            </ul>
+            <div class="cart-item">
+                <i class='bx bx-search-alt' id="search-icon" ></i>
+                <i class='bx bx-cart-alt' id="cart-icon" ></i>
+                <span class="number-cart">10</span>     
+            </div>
+            <div class="header-icon ">
+                <i class='bx bxs-user-circle' ></i>
+                <button class="btn">My account</button>
+            </div>
+            <!-- OPEN FORM SEARCH -->
+            <div class="search-form">
+                <input type="search" placeholder="Tìm kiếm...">
+            </div>
+    </header>
+
+    <section class="banner-prd" id="banner">
+      <div class="bannersell">
+        <h1>#Siêu ưu đãi</h1>
+        <h2>Khuyến mãi lên đến <span>70% </span>các mặt hàng T-Shirt & Phụ kiện đi kèm</h2>
+      </div>
+    </section>
+
+    <section>
+        <div class="FORM-ALL">
+            <div class="info-text">
+                <p class="color-text-header">
+                    (*) Nếu đã có tài khoản từ website cũ, mời bạn thực hiện đăng ký với số điện thoại đã dùng để Totoday cập nhật lại thông tin nhé!
+                </p>
+            </div>
+                <div class="BOX-FORM" id="BOX-FORM">
+                    <!-- ..............dangnhap............... -->
+                    <div class="Dangnhap-Dangky">           
+                        <button id="dangnhap">
+                            ĐĂNG NHẬP
+                        </button>
+                
+                        <button id="dangky">
+                            ĐĂNG KÝ
+                        </button>
+                        
+    
+                    </div>
+                    <div class="form-input" id="form-input">
+                        <form action="index.php?page=join" method="post">
+                            <div class="form-name">
+                                <legend class="tieude name">Tên đăng nhập</legend>
+                                <div class="input-namelgn">
+                                    <input id="namelgn" name="user" placeholder="Tên đăng nhập" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="form-passwork">
+                                <legend class="tieude passwork">Mật khẩu</legend>
+                                <div id="input-passwork">
+                                    <input class="input-passwork" id="password" name="pass" placeholder="Mật khẩu" type="password">
+                                    <div id="button-passwork">
+                                        <button class="button-passwork" tabindex="0" type="button">
+                                            <i class="fa-solid fa-lock"></i>
+                                            <span class=""></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MATKHAU">
+                                <a class="reset-password" href="/auth/reset-password">Quên mật khẩu?</a>
+                            </div>
+                            <div class="BUTTON-FORM">
+                                <input class="btn-dangnhap" tabindex="0" type="submit" name="sub" value="Đăng nhập">
+                            </div>
+                                                    </form>
+                        <div class="hoac" role="separator">
+                            <span style="display: inline-block;padding-left: calc(8px * 1.2);padding-right: calc(8px * 1.2);">Hoặc</span>
+                        </div>
+                        <div class="BUTTON-FORM-GOOGLE">
+                            <div class="flex-btn">  
+                                <img src="../layout/img/fixed/google.webp" alt="">     
+                                <p class="chu-gg">Google</p>
+                                <span class=""></span>
+                            </div>
+                        </div>
+                        <div class="remember-me">
+                            <p class="">Bạn mới biết đến FashionFusion?
+                                <span class="subribe" id="subribe"> 
+                                    Đăng ký
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="form-input2" id="form-input2">
+                        <form action="index.php?page=join" method="post">
+                            <div class="form-name">
+                                <legend class="tieude name">Số điện thoại</legend>
+                                <div class="input-namelgn">
+                                    <input id="namelgn" name="user" placeholder="Số điện thoại" type="number" required="">
+                                </div>
+                            </div>
+
+                            <div class="form-name">
+                                <legend class="tieude name">Email</legend>
+                                <div class="input-namelgn">
+                                    <input id="namelgn" name="user" placeholder="Nhập email" type="text" required="">
+                                </div>
+                            </div>
+
+                            <div class="form-name">
+                                <legend class="tieude name">Tên đăng nhập</legend>
+                                <div class="input-namelgn">
+                                    <input id="namelgn" name="user" placeholder="Tên đăng nhập" type="text" required="">
+                                </div>
+                            </div>
+
+                            <div class="form-passwork">
+                                <legend class="tieude passwork">Mật khẩu</legend>
+                                <div id="input-passwork">
+                                    <input class="input-passwork" id="password" name="password" placeholder="Mật khẩu" type="text">
+                                    <div id="button-passwork">
+                                        <button class="button-passwork" tabindex="0" type="button">
+                                            <i class="fa-solid fa-lock"></i>
+                                            <span class=""></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-passwork">
+                                <legend class="tieude passwork">Nhập lại mật khẩu</legend>
+                                <div id="input-passwork">
+                                    <input class="input-passwork" id="password" name="password" placeholder="Nhập lại mật khẩu" type="text">
+                                    <div id="button-passwork">
+                                        <button class="button-passwork" tabindex="0" type="button">
+                                            <i class="fa-solid fa-lock"></i>
+                                            <span class=""></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="MATKHAU">
+                                <a class="reset-password" href="/auth/reset-password">Quên mật khẩu?</a>
+                            </div> -->
+                            <div class="BUTTON-FORM">
+                                <input class="btn-dangnhap" tabindex="0" type="submit" value="Đăng ký">
+                            </div>
+                        </form>
+                        <div class="hoac" role="separator">
+                            <span style="display: inline-block;padding-left: calc(8px * 1.2);padding-right: calc(8px * 1.2);">Hoặc</span>
+                        </div>
+                        <div class="BUTTON-FORM-GOOGLE">
+                            <div class="flex-btn">  
+                                <img src="../layout/img/fixed/google.webp" alt="">     
+                                <p class="chu-gg">Google</p>
+                            </div>
+                        </div>
+                        <div class="remember-me">
+                            <p class="">Bạn đã có tài khoản !
+                                <span class="subribe" id="loginform"> 
+                                    Đăng Nhập
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                  
+                    </div>
+                </div>
+    </section>
+
+     <section class="footer">
+        <footer>
+          <div class="col">
+            <img src="" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 18/4 Mỹ Huề , Trung Chánh Hóc Môn</p>
+            <p><strong>Phone:</strong> (+84) 3770 812 / (+01) 1231 1231</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00. MON - SAT</p>
+  
+            <div class="follow">
+              <h4>Follow Us</h4>
+              <div class="icon">
+                <i class='bx bxl-facebook fb' ></i>
+                <i class='bx bxl-twitter twitter'></i>
+                <i class='bx bxl-instagram-alt instagram'></i>
+                <i class='bx bxl-youtube ytb' ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h4>About</h4>
+            <a href="">About us</a>
+            <a href="">Phỏng vấn</a>
+            <a href="">Hoạt động của công ty</a>
+            <a href="">Sự kiện </a>
+          </div>
+          <div class="col">
+            <h4>My account</h4>
+            <a href="">About us</a>
+            <a href="">Phỏng vấn</a>
+            <a href="">Hoạt động của công ty</a>
+            <a href="">Sự kiện </a>
+          </div>
+          <div class="col">
+            <h4>Intall app</h4>
+            <p>Form app Store or Google Play</p>
+            <div class="row">
+              
+              <img src="img/fixed/app.jpg" alt="">
+              <img src="img/fixed/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Geatways</p>
+            <img src="img/fixed/pay.png" alt="">
+          </div>
+        </footer>
+        <div class="coppyright">
+          <p>&copy; coppyright: PhamTheToan </p>
+        </div>
+     </section>
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script src="slide.js"></script>    <script src="js/script.js"></script>
+
+</body>
+</html>
+ 

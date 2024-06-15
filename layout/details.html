@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://canifa.com/assets/images/logo.svg" alt=""></div>
+         <!-- Menu icons -->
+        <i class='bx bx-menu' id="menu-icon"></i>    
+        <ul class="nav-bar">
+            <li><a href="">TRANG CHỦ </a></li>
+            <li><a href="">SẢN PHẨM</a></li>
+            <li><a href="">LIÊN HỆ</a></li>
+            <li><a href="">GIỚI THIỆU</a></li>
+        </ul>
+        <div class="cart-item">
+            <i class='bx bx-search-alt' id="search-icon" ></i>
+            <i class='bx bx-cart-alt' id="cart-icon" ></i>
+            <span class="number-cart">10</span>     
+        </div>
+        <div class="header-icon ">
+            <i class='bx bxs-user-circle' ></i>
+            <button class="account">My account</button>
+        </div>
+        <!-- OPEN FORM SEARCH -->
+        <div class="search-form">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+    </header>
+
+    <section id="product-details" class="product-details">
+        
+        <div class="single-pro-image">
+            <img src="img/product/f1.jpg" alt="" width="100%" id="MainImg">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/product/f1.jpg" width="100%" class="smallimg" alt="">
+                 </div>
+                <div class="small-img-col">
+                    <img src="img/product/f2.jpg" width="100%" class="smallimg" alt="">
+                 </div>
+                 <div class="small-img-col">
+                    <img src="img/product/f3.jpg" width="100%" class="smallimg" alt="">
+                 </div>
+                 <div class="small-img-col">
+                    <img src="img/product/f4.jpg" width="100%" class="smallimg" alt="">
+                 </div>
+           </div>  
+        </div>
+        <div class="single-pro-details">
+                <div class="BOX-hot">
+                    <h1 class="title-details">Chi Tiết sản phẩm:</h1>
+                    <div class="box-hot1">
+                        <span style="background-color:#F8E4D2 ; color: #F2994A;border-radius: 10px;">#Bán chạy</span>
+                        <span style="background-color: #b1ddf2; color: hsl(199, 90%, 62%);border-radius: 10px;">Đã bán: 1.5k</span>
+                    </div>
+                    <h1 >ÁO SƠ MI NAM - TODAY - HOLIDAY FRIENDS</h1>
+                    <div class="product-rate-sku">
+                        <div class="rate">
+                            <i class='bx bxs-star' ></i>
+                            <span>5/5</span>
+                        </div>
+                        <div class="sku">
+                            Áo Nam
+                        </div>
+                        <div class="status">
+                            <span class="available">Còn Hàng</span>
+                        </div>
+                    </div>
+                    <h1 style="margin:0px">Giá: <span>$300</span></h1>
+                </div>
+                <select name="" id="">
+                    <option value="">Select size</option>
+                    <option value="">S</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                    <option value="">Large</option>
+                </select>
+                <input type="number" value="1">
+                <button class="addcart">Add to cart</button>
+
+                <div class="info-product-">
+                    <h1>Giới Thiệu sản phẩm</h1>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Sequi atque nam blanditiis esse modi unde eveniet ut, laudantium quibusdam optio porro similique pariatur corporis commodi quia dolore. Soluta, consequatur odio!
+                    </span>
+                </div>
+        </div>
+    </section>
+    <section id="product-tab-details">
+        <ul id="pill-tab" class="pill-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="navlink active pills-home-tab" id="pills-home-tab">Mô tả sản phẩm</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="navlink pills-profile-tab" id="pills-profile-tab">Đánh giá</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="tabContent">
+            <div class="tab-home fade active show" id="tab-home">
+                <p>
+                    <span style="font-family:Arial;font-size:10pt;font-style:normal;">ÁO THUN NAM - TOTODAY - RETRO DENIM - FREEDOM</span>
+                    <br><br>
+                    <span style="font-family:Arial;font-size:10pt;font-style:normal;">
+                        Sản phẩm được lấy cảm hứng từ những năm thập niên 90 và được biến tấu lại theo phong cách trẻ trung và hiện đại của giới trẻ hiện nay. Đây chính là một sự kết hợp hoàn hảo của hơi thở cổ điển với xu thế hiện đại tạo nên một sản phẩm trendy.
+                    </span>
+                    <br><br>
+                    <span style="font-family:Arial;font-size:10pt;font-style:normal;">- Chất liệu 100% cotton nhập khẩu cao cấp</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Form Oversize thời thượng cùng kiểu chữ in trend nổi bật</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Điểm nhấn của chiếc áo chính là hiệu ứng in dập nổi vô cùng đặc biệt</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Đường may tỉ mỉ, chi tiết là yếu tố quan trọng để đảm bảo sản phẩm được ra mắt với phiên bản hoàn hảo và chất lượng nhất.</span>
+                    <br><br>
+                    <span style="font-family:Arial;font-size:10pt;font-style:normal;">Thông số sản phẩm:</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Chất liệu: Cotton</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Size:&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">+ L: 1m61 - 1m70 - 56kg - 65kg&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">+ XL: 1m71 - 1m75, 66kg - 75kg&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">+ 2XL: trên 1m75, 76kg - 85kg&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Màu sắc: Trắng - Đen - Kem</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Thương hiệu: TOTODAY</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Xuất xứ: Việt Nam</span>
+                    <br><br><span style="font-family:Arial;font-size:10pt;font-style:normal;">Chính sách sản phẩm:</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Hỗ trợ đổi trả sản phẩm trong 30 ngày&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Bảo hành lên đến 90 ngày.</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Được kiểm tra hàng trước khi thanh toán (đối với đơn online)</span>
+                    <br><br><span style="font-family:Arial;font-size:10pt;font-style:normal;">Lưu ý:&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Hình ảnh sản phẩm được chụp thực tế bởi TOTODAY.&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Tỉ lệ và màu sắc thực tế sẽ có sự chênh lệch nhưng không quá lớn do bố cục và ánh sáng khi chụp.&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- TOTODAY có chính sách đổi trả &amp; bảo hành để đảm bảo quyền lợi cho khách hàng. Vì thế khi nhận hàng nếu có vấn đề phát sinh hay chưa hài lòng xin đừng vội đánh giá hãy liên hệ ngay với chúng tớ để được hỗ trợ giải quyết một cách nhanh nhất.&nbsp;</span>
+                    <br><span style="font-family:Arial;font-size:10pt;font-style:normal;">- Đừng quên thêm mã giảm giá hay miễn phí vận chuyển trước khi thanh toán nhé!</span>
+                </p>
+            </div>
+            <div class="tab-home fade active show" id="tab-conment">
+                <form action="" method="post">
+                    <h2>Các bình luận trước đó </h2>
+                    <div class="list-comment">
+                        <div class="img-user">
+                            <img src="img/fixed/user-icon.png" alt="">
+                        </div>
+                        <div class="info">
+                            <span>Phạm Thế Toàn:</span>
+                            <p>Sản phẩm đẹp - chất lượng</p>
+                        </div>
+                    </div>
+
+                </form>
+                <form action="" method="post">
+                    <h2 class="plcmt">Hãy để lại nhận xét của bạn:</h2>
+                    <input type="text">
+                    <button class="btn-view ">Gửi</button>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="product1">
+        <h1 class="title-details dssplq">Danh sách sản phẩm liên quan</h1>
+        <div class="pro-container">
+            <div class="pro">
+                <img class="new" src="img/product/iconnew.png" alt="">
+                <img class="img" src="img/product/f1.jpg" alt="" width="300px">
+                <div class="des">
+                  <span>Áo khoác</span>
+                  <h5>Áo khoác nam T-Shirts</h5>
+                  <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                  </div>
+                  <span class="price">
+                    <h4 class="sell">400.000 ₫</h4>
+                    <span>$300</span>
+                  </span>
+                </div>
+                <a href="#"><i class='bx bx-cart-add cart' ></i></a>
+            </div>
+            <div class="pro">
+                <img class="new" src="img/product/iconnew.png" alt="">
+                <img class="img" src="img/product/f1.jpg" alt="" width="300px">
+                <div class="des">
+                  <span>Áo khoác</span>
+                  <h5>Áo khoác nam T-Shirts</h5>
+                  <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                  </div>
+                  <span class="price">
+                    <h4 class="sell">$400</h4>
+                    <span>$300</span>
+                  </span>
+                </div>
+                <a href="#"><i class='bx bx-cart-add cart' ></i></a>
+            </div>
+            <div class="pro">
+                <img class="new" src="img/product/iconnew.png" alt="">
+                <img class="img" src="img/product/f1.jpg" alt="" width="300px">
+                <div class="des">
+                  <span>Áo khoác</span>
+                  <h5>Áo khoác nam T-Shirts</h5>
+                  <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                  </div>
+                  <span class="price">
+                    <h4 class="sell">$400</h4>
+                    <span>300.000 ₫</span>
+                  </span>
+                </div>
+                <a href="#"><i class='bx bx-cart-add cart' ></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newletter">
+        <div class="newstext">
+          <h4>Sign Up For Newslatters</h4>
+          <p>Get E-mail updates about our latest shop and <span>specical offers</span> </p>
+        </div>
+        <div class="form">
+          <input type="text" name="" id="" placeholder="Your E-mail address">
+          <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    
+    <section class="footer">
+          <footer>
+            <div class="col">
+              <img src="" alt="">
+              <h4>Contact</h4>
+              <p><strong>Address:</strong> 18/4 Mỹ Huề , Trung Chánh Hóc Môn</p>
+              <p><strong>Phone:</strong> (+84) 3770 812 / (+01) 1231 1231</p>
+              <p><strong>Hours:</strong> 10:00 - 18:00. MON - SAT</p>
+    
+              <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                  <i class='bx bxl-facebook fb' ></i>
+                  <i class='bx bxl-twitter twitter'></i>
+                  <i class='bx bxl-instagram-alt instagram'></i>
+                  <i class='bx bxl-youtube ytb' ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h4>About</h4>
+              <a href="">About us</a>
+              <a href="">Phỏng vấn</a>
+              <a href="">Hoạt động của công ty</a>
+              <a href="">Sự kiện </a>
+            </div>
+            <div class="col">
+              <h4>My account</h4>
+              <a href="">About us</a>
+              <a href="">Phỏng vấn</a>
+              <a href="">Hoạt động của công ty</a>
+              <a href="">Sự kiện </a>
+            </div>
+            <div class="col">
+              <h4>Intall app</h4>
+              <p>Form app Store or Google Play</p>
+              <div class="row">
+                <img src="/layout/img/fixed/app.jpg" alt="">
+                <img src="/layout/img/fixed/play.jpg" alt="">
+              </div>
+              <p>Secured Payment Geatways</p>
+              <img class="pay" src="/layout/img/fixed/pay.png" alt="">
+            </div>
+          </footer>
+          <div class="coppyright">
+            <p>&copy; coppyright: PhamTheToan </p>
+          </div>
+    </section>
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+    <script>
+        var MainImg = document.getElementById('MainImg');
+        var smallimg=document.getElementsByClassName('smallimg');
+
+        smallimg[0].onclick= function(){
+            MainImg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick= function(){
+            MainImg.src=smallimg[1].src;
+            
+        }
+        smallimg[2].onclick= function(){
+            MainImg.src=smallimg[2].src;
+            
+        }
+        smallimg[3].onclick= function(){
+            MainImg.src=smallimg[3].src;
+            
+        }
+        
+    </script>
+  <script src="./js/slide.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
