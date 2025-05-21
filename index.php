@@ -9,6 +9,8 @@ require_once("dao/voucher.php");
 require_once("dao/pdo.php");
 require_once("dao/cart.php");
 require_once("dao/danhmuc.php");
+require_once("dao/pdo.php");
+//comment 
 require_once("dao/product.php");
 require_once("dao/user.php");
 require_once("dao/bill.php");
